@@ -1,0 +1,26 @@
+/* client/src/button.css */
+
+.custom-button {
+  color: #f97316;
+  border-color: white;
+  border-width: 1px;
+  width: 7rem;
+  height: 1.75rem;
+  border-radius: 0.125rem;
+}
+
+.custom-button:hover {
+  color: white;
+  background-color: #f97316;
+  border-color: #f97316;
+}
+
+.custom-button:active {
+  color: #f97316;
+
+  background-color: rgb(255, 255, 255);
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

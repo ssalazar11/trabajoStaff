@@ -1,0 +1,69 @@
+DASHBOARD
+  VENTAS DEL DÍA
+  
+
+
+
+
+
+
+
+
+
+Página principal con 
+Productos con foto 
+Nombre 
+Descripción 
+Precio 
+Inventario 
+Aviso de producto agotándose
+Indicativo de producto:
+Agotado 
+Pocas unidades 
+Click para venta en lateral 
+
+Filtros 
+Ropa 
+Accesorios 
+Comida 
+
+Click
+Editar el producto 
+Precio 
+Descripción 
+Color 
+Talla 
+Sabor 
+Características 
+
+Creación de productos nuevos: 
+Formulario con
+Foto 
+Nombre del producto 
+Características 
+Cantidad 
+Precio de venta 
+Tallas 
+Color 
+Sabor 
+Tamaño 
+
+Informes: 
+Ventas diarias 
+Cuentas 
+Efectivo 
+Nequi 
+Estimado de utilidades 
+Inventario 
+
+Compras: 
+Proveedores 
+Contacto 
+Producto 
+# cuenta 
+Comentarios 
+Registro: 
+Proveedor 
+Cantidad de producto 
+Valor de compra 
+Cómo manejar las compras de insumos y materia prima

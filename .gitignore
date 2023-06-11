@@ -1,0 +1,8 @@
+#Paquetes de node
+
+
+#environment variables
+.env
+
+.DS_Store
+node_modules

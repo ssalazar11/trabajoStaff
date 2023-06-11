@@ -1,0 +1,8 @@
+.logo-img {
+  height: 81px; /* Ajusta la altura según tus necesidades */
+  width: auto; /* La anchura se ajustará automáticamente según la proporción original */
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: -20px;
+  margin-left: 10px;
+}
