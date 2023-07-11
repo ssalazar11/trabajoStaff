@@ -37,7 +37,8 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "react-scripts": "^5.0.1"
   },
   "resolutions": {
     "**/npm": "8.x"

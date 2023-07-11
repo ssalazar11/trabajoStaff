@@ -17,7 +17,7 @@ export function ProductsPage() {
 
         <div className="flex flex-col items-center justify-center text-white">
           <GiGuitarHead className="h-48 w-48" />
-          <h1>No hay productos...</h1>
+          
         </div>
       </div>
     );

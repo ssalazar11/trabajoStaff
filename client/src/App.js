@@ -1,19 +1,11 @@
 import { Toaster } from "react-hot-toast";
 import { MerchProvider } from "./context/merchContext";
-import {
-  ProductsForm,
-  ProductsPage,
-  NotFoundPage,
-  ProductsPageList,
-  PurchasesPage,
-  // ProductsPageV2,
-  HomeVentas,
-  IncomesPage,
-  IncomesForm,
-} from "./pages";
+import { ProductsForm, ProductsPage, ProductsPageList, PurchasesPage, HomeVentas, IncomesPage, IncomesForm} from "./pages";
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
-import { Sidebar } from "./components/Sidebar";
+import { Sidebar } from "./components/Sidebar"; 
+import Horario from "./pages/Horario";   
+import Login from "./pages/Login"
 // import logo from "./assets/Logo_Morado.png";
 //import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
@@ -26,18 +18,16 @@ function App() {
         <MerchProvider>
           <div className="container mx-auto flex-1 px-10">
             <Routes>
-              <Route path="/merch/products" element={<ProductsPage />} />
+            <Route path="/merch/products" element={<ProductsPage />} />
               <Route path="/merch/newproduct" element={<ProductsForm />} />
               <Route path="/merch/products/:id" element={<ProductsForm />} />
-              <Route
-                path="/merch/productslist"
-                element={<ProductsPageList />}
-              />
+              <Route path="/merch/productslist" element={<ProductsPageList />}/>
               <Route path="/merch/purchases" element={<PurchasesPage />} />
               <Route path="/" element={<HomeVentas />} />
               <Route path="/merch/incomes" element={<IncomesPage />} />
               <Route path="/merch/incomes/:id" element={<IncomesForm />} />
-              <Route path="*" element={<NotFoundPage />} />
+              <Route path="/horario" element={<Horario />} />
+              <Route path='/login' element={<Login />} />
               {/* <Route path="/merch/ventas" element={<HomeVentas />} /> */}
               {/* <Route path="/merch/productsV2" element={<ProductsPageV2 />} /> */}
             </Routes>

@@ -17,7 +17,7 @@ RUN cd server && npm install
 RUN cd client && npm run build
 
 # Expone el puerto que utilizará la aplicación
-EXPOSE 3000
+EXPOSE 4000
 
 # Comando para ejecutar la aplicación
 CMD ["npm", "start"]

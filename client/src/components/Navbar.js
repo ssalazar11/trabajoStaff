@@ -9,10 +9,7 @@ function Navbar({ filterText, onFilterTextChange }) {
       <div className="container mx-auto flex items-center justify-between px-4">
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="logo-img" />
-          <Link
-            to="/"
-            className=" transition-colors duration-300 hover:text-neutral-600 text-white"
-          >
+          <Link to="/"className=" transition-colors duration-300 hover:text-neutral-600 text-white">
             Home
           </Link>
         </div>
@@ -38,26 +35,18 @@ function Navbar({ filterText, onFilterTextChange }) {
           <li>
             <Link
               // to="/merch/ventas"
-              to="/"
-              className=" transition-colors duration-300 hover:text-neutral-600 text-white"
-            >
+              to="/merch/ventas" className=" transition-colors duration-300 hover:text-neutral-600 text-white">
               Ventas
             </Link>
           </li>
 
           <li>
-            <Link
-              to="/merch/purchases"
-              className=" transition-colors duration-300 hover:text-neutral-600 text-white"
-            >
+            <Link to="/merch/purchases" className=" transition-colors duration-300 hover:text-neutral-600 text-white">
               Compras
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-              className=" transition-colors duration-300 hover:text-neutral-600 text-white"
-            >
+            <Link to="/" className=" transition-colors duration-300 hover:text-neutral-600 text-white">
               About
             </Link>
           </li>
