@@ -9,15 +9,13 @@ const HorarioComponente = () => {
   const eventos = [
     {
       title: 'Clase 1',
-      start: '2023-07-05T13:00:00',
-      end: '2023-07-05T14:00:00',
-      daysOfWeek: [1], // Lunes
+      start: '2023-07-14',
+      end: '2023-07-15',
     },
     {
       title: 'Clase 2',
-      start: '2023-07-05T15:00:00',
-      end: '2023-07-05T16:00:00',
-      daysOfWeek: [2], // Martes
+      start: '15:00:00',
+      end: '16:00:00',
     },
     // Agrega más eventos según sea necesario
   ];
@@ -33,10 +31,11 @@ const HorarioComponente = () => {
             timeGridHorario:{
                 type:'timeGridWeek',
                 allDaySlot:false,
-                slotMinTime:"10:00:00",
-                slotMaxTime:"22:00:00",
+                slotMinTime:"08:00:00",
+                slotMaxTime:"23:00:00",
                 nowIndicator:true,
                 hiddenDays:[0],
+                events:{eventos},
             }
         }}
         headerToolbar={{

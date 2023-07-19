@@ -6,6 +6,7 @@ import "./index.css";
 import { Sidebar } from "./components/Sidebar"; 
 import Horario from "./pages/Horario";   
 import Login from "./pages/Login"
+import Axios from 'axios';
 // import logo from "./assets/Logo_Morado.png";
 //import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
@@ -13,6 +14,7 @@ import Login from "./pages/Login"
 function App() {
   return (
     <>
+    
       <div className="flex bg-neutral-800">
         <header className="bg-orange-400 h-3 w-full fixed top-0 z-10"></header>{" "}
         <MerchProvider>

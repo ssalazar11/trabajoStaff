@@ -7,6 +7,7 @@ import usersRoutes from "./routes/users.Routes.js";
 import morgan from "morgan";
 import passport from "passport";
 import session from "express-session";
+import cors from 'cors';
 import { configureLocalStrategy } from "./passport/local.auth.js";
 import flash from "connect-flash";
 import fileUpload from "express-fileupload";
@@ -54,6 +55,7 @@ app.use(expensesRoutes);
 app.use(usersRoutes);
 //app.use(authRoutes);
 app.use(express.static(join(__dirname, "../client/build")));
+app.use(cors())
 
 app.get("*", (req, res) => {
   res.sendFile(join(__dirname, "../client/build/index.html"));
