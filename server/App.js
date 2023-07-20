@@ -49,16 +49,17 @@ app.use((req, res, next) => {
 configureLocalStrategy();
 
 //routes
-app.use(productsRoutes);
+app.use(cors())
+/* app.use(productsRoutes);
 app.use(incomesRoutes);
 app.use(expensesRoutes);
 app.use(usersRoutes);
 //app.use(authRoutes);
 app.use(express.static(join(__dirname, "../client/build")));
-app.use(cors())
+
 
 app.get("*", (req, res) => {
   res.sendFile(join(__dirname, "../client/build/index.html"));
 });
-
+*/
 export default app;

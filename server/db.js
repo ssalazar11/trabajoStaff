@@ -6,7 +6,7 @@ dotenv.config();
 
 export async function connectDB() {
   try {
-    const db = await mongoose.connect("mongodb+srv://admin:<12345>@cluster0.hmxbgzr.mongodb.net/",{
+    const db = await mongoose.connect("mongodb+srv://admin:12345@cluster0.hmxbgzr.mongodb.net/pruebaStaff?retryWrites=true&w=majority",{
       useNewUrlParser:true,
       useUnifiedTopology:true
     });
