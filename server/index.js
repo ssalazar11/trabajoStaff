@@ -4,6 +4,8 @@ import { connectDB } from "./db.js";
 import { PORT } from "./config.js";
 import engine from "ejs-mate";
 import path from "path";
+import rutaEstudiante from './rutas/rutaEstudiante.js'
+
 
 //settings
 app.set("views", path.join(fileURLToPath(import.meta.url), "..", "views"));
@@ -15,3 +17,5 @@ connectDB();
 app.listen(PORT, () => {
   console.log("Server is running on port", PORT);
 });
+
+app.use(rutaEstudiante);

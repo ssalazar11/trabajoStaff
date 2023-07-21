@@ -1,0 +1,12 @@
+{
+    "nombre":"Samuel Salazar",
+    "nucleoFamiliar":[{
+        "nombre":"Yuliett Salazar",
+        "parentesco":"Madre"
+    },
+    {
+        "nombre":"William Salazar",
+        "parentesco":"Padre"
+    }
+]
+}

@@ -1,38 +1,25 @@
 import mongoose from 'mongoose';
 
 const estudiantesSchema = new mongoose.Schema({
-    nombre:{
-        type: String
-    },
-    nucleoFamiliar:{
-        type:Array
-    },
-    asignatura:{
-        type:Array
-    },
-    inicioFinalClase:{
-        type: Array
-    },
-    rol:{
-        type: mongoose.Types.ObjectId
-    },
+    nombre:String,
+    nucleoFamiliar:Array,
+    asignatura:Array,
+    inicioFinalClases:Array,
+    rol:mongoose.Types.ObjectId,
     horarioOriginal:{
-        type:Object
+        dia:String,
+        hora:String,
     },
     horarioReemplazo:{
-        type:Object
+        dia:String,
+        hora:String,
     },
-    credenciales:{
-        type: Array
-    },
-    salonAsignado:{
-        type: mongoose.Types.ObjectId
-    },
-    profesor:{
-        type:mongoose.Types.ObjectId
-    }
+    credenciales:Array,
+    salonAsignado:mongoose.Types.ObjectId,
+    profesor:mongoose.Types.ObjectId
 });
 
-const estudiante = mongoose.model('estudiante', estudiantesSchema);
+const Estudiantes = mongoose.model('Estudiantes', estudiantesSchema, 'Estudiantes');
+console.log(Estudiantes);
 
-export default estudiante;
+export default Estudiantes;
