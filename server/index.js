@@ -5,6 +5,7 @@ import { PORT } from "./config.js";
 import engine from "ejs-mate";
 import path from "path";
 import rutaEstudiante from './rutas/rutaEstudiante.js'
+import apiController from "./apiController.js";
 
 
 //settings
@@ -19,3 +20,4 @@ app.listen(PORT, () => {
 });
 
 app.use(rutaEstudiante);
+app.use(apiController);
