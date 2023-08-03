@@ -6,6 +6,7 @@ import "./index.css";
 import { Sidebar } from "./components/Sidebar"; 
 import Horario from "./pages/Horario";   
 import Login from "./pages/Login"
+import PaginaAdministrativos from "./pages/PaginaAdministrativos";
 import Axios from 'axios';
 // import logo from "./assets/Logo_Morado.png";
 //import Navbar from "./components/Navbar";
@@ -30,6 +31,7 @@ function App() {
               <Route path="/merch/incomes/:id" element={<IncomesForm />} />
               <Route path="/horario" element={<Horario />} />
               <Route path='/login' element={<Login />} />
+              <Route path='/administrativos' element={<PaginaAdministrativos />}/>
               {/* <Route path="/merch/ventas" element={<HomeVentas />} /> */}
               {/* <Route path="/merch/productsV2" element={<ProductsPageV2 />} /> */}
             </Routes>

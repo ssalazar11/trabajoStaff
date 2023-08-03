@@ -8,7 +8,7 @@ const apiKey=process.env.API_KEY;
 const apiUrl='https://api.q10.com/v1/administrativos?Limit=30&Offset=1';
 const app=express();
 
-const getApiEstudiantes = async (req, res) => {
+const getApiAdministrativos = async (req, res) => {
     try {
         const response = await axios.get(apiUrl, {
             headers: {
@@ -26,6 +26,6 @@ const getApiEstudiantes = async (req, res) => {
     }
 };
 
-app.get('/api/estudiantes', getApiEstudiantes);
+app.get('/api/administrativos', getApiAdministrativos);
 
 export default app;
