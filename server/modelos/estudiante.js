@@ -1,22 +1,24 @@
 import mongoose from 'mongoose';
 
 const estudiantesSchema = new mongoose.Schema({
-    nombre:String,
-    nucleoFamiliar:Array,
-    asignatura:Array,
-    inicioFinalClases:Array,
-    rol:mongoose.Types.ObjectId,
-    horarioOriginal:{
-        dia:String,
-        hora:String,
+    Codigo_estudiante:String,
+    Primer_nombre:String,
+    Segundo_nombre:String,
+    Primer_apellido:String,
+    Segundo_apellido:String,
+    Codigo_tipo_identificacion:String,
+    Numero_identificacion:String,
+    Genero:String,
+    Email:String,
+    Telefono:String,
+    Celular:String,
+    Fecha_nacimiento:String,
+    Lugar_nacimiento:String,
+    Lugar_residencia:String,
+    Direccion:String,
+    Familiares_relacionados:{
+        
     },
-    horarioReemplazo:{
-        dia:String,
-        hora:String,
-    },
-    credenciales:Array,
-    salonAsignado:mongoose.Types.ObjectId,
-    profesor:mongoose.Types.ObjectId
 });
 
 const Estudiantes = mongoose.model('Estudiantes', estudiantesSchema, 'Estudiantes');

@@ -21,7 +21,7 @@ app.post("/crearEstudiante", async(req, res) => {
         console.log(req.body);
         const data=new Estudiantes(req.body);
         await data.save();
-        res.status(201).send("estudiante creado exitosamente")
+        res.status(201).send("estudiante creado exitosamente");
     } catch(error){
         res.status(500).send(error);
     }
